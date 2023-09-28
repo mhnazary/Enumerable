@@ -9,6 +9,7 @@ module MyEnumerable
     false
   end
 
+  # method for filter
   def filter
     result = []
     each { |item| result << item if yield item }
