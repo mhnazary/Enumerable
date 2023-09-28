@@ -1,5 +1,4 @@
 module MyEnumerable
-
   def all?
     each { |item| return false unless yield item }
     true
@@ -15,5 +14,4 @@ module MyEnumerable
     each { |item| result << item if yield item }
     result
   end
-
 end
